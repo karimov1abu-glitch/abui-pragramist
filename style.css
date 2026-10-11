@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(124, 70, 175);
+    height: 100vh;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: aliceblue;
+    font-size: 100px;
+}
+@keyframes mix{
+    0%{
+        scale: 0%;
+    }
+    100%{
+        scale: 100%;
+        opacity: 1;
+    }
+}
+header{
+    animation: mix 1s forwards;
+    opacity: 0;
+}
+.e{
+    animation: altr 1s  forwards;
+    opacity: 0;
+}
+@keyframes altr{
+    0%{
+        scale: 0%;
+    }
+    100%{
+        scale: 100%;
+        opacity: 1;
+    }
+}
+.a{
+    animation: box 1s 1.5s forwards;
+    opacity: 0;
+}
+@keyframes box{
+    0%{
+        scale: 0%;
+    }
+    100%{
+        scale: 100%;
+        opacity: 1;
+    }
+}
+.r{
+    animation: fero 1s 2s forwards;
+    opacity: 0;
+}
+@keyframes fero{
+    0%{
+        scale: 0%;
+    }
+    100%{
+        scale: 100%;
+        opacity: 1;
+    }
+}
+.t{
+    animation: dod 1s 2.5s forwards;
+    opacity: 0;
+}
+@keyframes dod{
+    0%{
+        scale: 0%;
+    }
+    100%{
+        scale: 100%;
+        opacity: 1;
+    }
+}
+.h{
+    animation: raft 1s 3s forwards;
+    opacity: 0;
+}
+@keyframes raft{
+    0%{
+        scale: 0%;
+    }
+    100%{
+        scale: 100%;
+        opacity: 1;
+    }
+}
+nav{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 30px;
+}
+
+a{
+    position: relative;
+    top: -300px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: auto;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 15px;
+    color: black;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 300px 0px;
+    transition: all 1s;
+}
+a:hover{
+    background-color: brown;
+    color: white;
+    transform: translateY(-15px);
+}
+@media (max-width: 768px){
+    .e{
+        font-size: 70px;
+    }
+    .a{
+        font-size: 50px;
+    }
+    .r{
+        font-size: 50px;
+    }
+    .t{
+        font-size: 50px;
+    }
+    .h{
+        font-size: 70px;
+    }
+    a{
+        margin-top: 30px;
+    }
+}
